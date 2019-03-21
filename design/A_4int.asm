@@ -1,4 +1,4 @@
-;*****************************************
+﻿;*****************************************
 ;宏定义打印字符串
 print macro str_addr
       push dx
@@ -26,8 +26,7 @@ CodeSg SEGMENT
 Main:
     JMP Load
     old_int_nine DD ? ;存放原来的int 9 handle
-    full_screen_D db 1999 dup('D'),'$'   ;全屏D字符串
-
+    full_screen_D db 1999 dup('D'),'$'   ;全屏D字符串, 共25*80 -1个字符
 clearScreen proc near
     push ax
     push bx

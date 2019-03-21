@@ -1,0 +1,6 @@
+.vscode
+EXPRI
+test
+*.EXE
+*.OBJ
+design/ttt.asm
